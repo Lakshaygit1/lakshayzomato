@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main{
+    background: url(assets/81f3ff974d82520780078ba1cfbd453a1583259680.avif);
+    height: 75vh;
+    background-size: cover;
+    background-position: center center;
+}
+
+nav{
+    /* background-color: white; */
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+}
+
+.hero img{
+    width: 300px;
+    padding: 30px;
+}
+
+.hero span{
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    text-align: center;
+}
+
+.hero .input{
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    /* align-items: center; */
+    width: 60vw;
+    padding: 15px 10px;
+    margin: 30px 0px;
+}
+
+.hero .input img.location{
+    width: 20px;
+    padding: 0px 7px;
+}
+.hero .input img.down{
+    width: 15px;
+    padding: 0px 7px;
+    cursor: pointer;
+}
+.hero .input img.search{
+    width: 20px;
+    padding: 0px 15px;
+    cursor: pointer;
+}
+
+.hero .input input{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vertical-line{
+    height: 25px;
+    width: 1px;
+    background-color: rgb(207, 207, 207);
+    border-radius: 10px;
+}
+
+.hero .input .search-input{
+    width: 100%;
+}
+.hero .input .search-input input{
+    width: 100%;
+
+}
+
+.cards{
+    /* background-color: aqua; */
+    /* height: 30vh; */
+    /* width: 90vw;
+    margin: auto; */
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+    gap:20px
+}
+
+.card{
+    background-color: white;
+    width: 28vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    height: 40vh;
+    transition: all 0.3s ease-in-out;
+}
+
+.card .image{
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+}
+
+.card .image img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position:center center;
+    height: 192px;
+}
+
+.card .content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.card .content span:nth-child(1){
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.collections{
+    padding: 40px 65px;
+}
+
+.collections .heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.collections .heading>span:nth-child(1){
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43px;
+}
+
+.collections .heading div{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+
+}
+
+.collections .heading>div>span:nth-child(1){
+    font-size: 18px;
+    font-weight: 300px;
+    line-height: 23px;
+}
+.collections .heading>div>a{
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 16px;
+    color: #ef4f5f;
+    text-decoration: none;
+}
+
+.collections .list{
+    display: flex;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.collections .list .item{
+    height: 55vh;
+    width: 30%;
+    border-radius: 6px;
+    /* background: url(https://b.zmtcdn.com/data/collections/f25923193488d2884f8689f185d418ef_1705558811.png?output-format=webp); */
+    overflow: hidden;
+    position: relative;
+}
+
+.collections .list .item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.vignete{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.8) 100%);
+    z-index: 1;
+
+}
+
+.collections .list .item .content{
+    color: white;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.collections .list .item .content span:nth-child(1){
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+}
+
+.collections .list .item .content span:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.collections .list .item .content span:nth-child(2) img{
+    width: 0.8em;
+    padding: 0px 5px;
+}
+
+.grid-section{
+    padding: 40px 0px;
+}
+
+.grid-section .heading{
+    padding: 0px 65px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+
+}
+
+.grid{
+    height: 45vh;
+}
+
+.grid-section .grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 65px;
+}
+
+.grid-section .grid .grid-item{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    transition: all 0.3 ease-in-out;
+}
+
+.grid-section .grid .grid-item.see-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-section .grid .grid-item.see-more img{
+    padding: 0px 5px;
+}
+
+.grid-section .grid .grid-item:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+}
+
+.grid-section .grid .grid-item div:nth-child(1){
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #363636;
+}
+
+.grid-section .grid .grid-item div:nth-child(2){
+    padding: 10px;
+}
+
+.grid-section .grid .grid-item div:nth-child(1) span:nth-child(1){
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
+
+.grid-section .grid .grid-item div:nth-child(1) span:nth-child(2){
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.get-app-section{
+    background-color: #fffbf7;
+    height: 70vh;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1c1c1c;
+    gap: 10vw;
+}
+
+.get-app-section .image img{
+    width: 20vw;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.get-app-section .content .heading{
+    display: flex;
+    flex-direction: column;
+}
+
+.get-app-section .content .heading span:nth-child(1){
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 56px;
+}
+
+.get-app-section .content .heading span:nth-child(2){
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #363636;
+}
+
+.get-app-section .content .links img{
+    width: 140px;
+}
+
+.get-app-section .content .radio{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    padding: 10px 0px;
+}
+
+.get-app-section .content .input{
+    padding: 10px 0px;
+}
+
+.get-app-section .content .links div:nth-child(1){
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #9c9c9c;
+}
+
+.get-app-section .content .input input{
+    padding: 13px 10px;
+    width: 20vw;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: 1px solid #ebeaea;
+}
+
+.get-app-section .content .input input:focus{
+    outline: none;
+}
+
+.get-app-section .content .input button{
+    background-color: #ef4f5f;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.get-app-section .content .links{
+    padding: 10px 0px;
+}
+
+.options{
+    padding: 40px 65px;
+    background-color: #fcfcfc;
+
+}
+
+.options .heading span{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 43px;
+    color: #363636;
+}
+
+.options .list{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.options .list .option{
+    width: 85vw;
+    height: 10vh;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border: 1px solid #ebeaea;
+    background-color: white;
+}
+
+.options .list .option:hover{
+    cursor: pointer;    
+}
+
+.options .list .option span{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1c1c1c;
+}
